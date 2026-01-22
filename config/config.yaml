@@ -178,7 +178,7 @@ display:
                                       # 开启后将对 RSS 进行关键词分析并在通知中展示
                                       # 关闭后跳过分析，但独立展示区不受影响
 
-    standalone: false                 # 独立展示区（完整热榜/RSS，不受关键词过滤）
+    standalone: true                 # 独立展示区（完整热榜/RSS，不受关键词过滤）
     ai_analysis: true                 # AI 分析区域
 
   # 📋 独立展示区配置（仅在 regions.standalone: true 时生效）
@@ -188,7 +188,7 @@ display:
   #   - RSS 源内容较少，希望全部展示而非只显示关键词匹配的
   # 注意：同一新闻可能同时出现在关键词匹配区和独立展示区
   standalone:
-    platforms: []                     # 热榜平台 ID 列表（如 ["zhihu", "weibo"]）
+    platforms: ["weibo","douyin","toutiao","百度热搜"]                     # 热榜平台 ID 列表（如 ["zhihu", "weibo"]）
     rss_feeds: []                     # RSS 源 ID 列表（如 ["hacker-news"]）
     max_items: 20                     # 每个源最多展示条数（0=不限制）
 
