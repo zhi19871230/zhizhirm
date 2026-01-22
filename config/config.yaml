@@ -188,7 +188,7 @@ display:
   #   - RSS 源内容较少，希望全部展示而非只显示关键词匹配的
   # 注意：同一新闻可能同时出现在关键词匹配区和独立展示区
   standalone:
-    platforms: ["weibo","douyin","toutiao","百度热搜"]                     # 热榜平台 ID 列表（如 ["zhihu", "weibo"]）
+    platforms: ["weibo","douyin","toutiao","baidu","zhihu"]                     # 热榜平台 ID 列表（如 ["zhihu", "weibo"]）
     rss_feeds: []                     # RSS 源 ID 列表（如 ["hacker-news"]）
     max_items: 20                     # 每个源最多展示条数（0=不限制）
 
